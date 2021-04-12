@@ -7,8 +7,8 @@ import matplotlib
 
 matplotlib.use('agg')
 
-SPOTIPY_CLIENT_ID = '41b219e864a4486c8b7f0b6d8ab797cd'
-SPOTIPY_CLIENT_SECRET = '97425b44ef224a57b5943e9698912618'
+SPOTIPY_CLIENT_ID = '/////'
+SPOTIPY_CLIENT_SECRET = '////////'
 SPOTIPY_REDIRECT_URI = 'http://localhost:8080'
 SCOPE = 'user-library-read'
 user_id = 'ktj24522'
