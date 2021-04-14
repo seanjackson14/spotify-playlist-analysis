@@ -80,7 +80,10 @@ def explicitPct():
     else:
         statement.append(f"Just {pctExplicit} of your playlist is explicit. Nice job!")
     fig, ax = plt.subplots()
-    sns.barplot(x=pct.index,y=[pct[True],pct[False]],ci=None)
+        if pctExplicit < 50:
+        sns.barplot(x=pct.index,y=[pct[False],pct[True]],ci=None)
+    else:
+        sns.barplot(x=pct.index, y=[pct[True], pct[False]], ci=None)
     ax.set_xticklabels(['Clean','Explicit'])
     plt.ylabel('Percent of Playlist')
     plt.title('Naughty or Nice?')
